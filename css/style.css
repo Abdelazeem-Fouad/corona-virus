@@ -1,0 +1,459 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    color: #50658e;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+    
+
+}
+p{
+    opacity: .9;
+    line-height: 1.8;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+}
+h3, .h3, h4, .h4{
+    color:#465675
+}
+.mg-bottom{
+    margin-bottom: 100px;
+}
+/*--------------Start navbar--------------*/
+.navbar-collapse{
+    margin-left: 40%;
+}
+.navbar-nav .nav-item .nav-link{
+    color: rgba(0, 0, 0, .7);
+    transition: color .3s;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #2a81ea;
+}    
+/*--------------End navbar--------------*/
+
+
+/*--------------Start Slider--------------*/
+.slider{
+    width: 100%;
+    height:700px;
+}
+.slider-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    color: white;
+}
+
+.slider-header h1{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.slider-header p,.slider-header span{
+    font-size: 18px;
+    color: #fff;
+    opacity: .9;
+    line-height:2;
+
+}
+
+.carousel-item img{
+    height: 700px;
+}
+.slider .carousel-inner .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+.carousel-control-prev, .carousel-control-next{
+    z-index: 3;
+    padding: 30px;
+    background-color: black;
+}
+/*--------------End Slider--------------*/
+
+/*--------------Start About--------------*/
+.about{
+    background-color: #f0f1f3 !important;
+    padding: 200px 0;
+}
+.section-head{
+    margin-bottom: 100px;
+}
+.section-head h5{
+    text-transform: uppercase;
+    color: #2a81ea;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section-head h2{
+    color: #50658e;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.section-head p{
+    width: 60%;
+    margin: auto;
+}
+.section-head p strong{
+    font-weight: bold;
+    color: #525252;;
+}
+
+.about .card{
+    margin:auto auto auto 20px;
+}
+.about .card:hover{
+    animation: card 2s ease-in-out;     
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+.about .card img{
+    width: 100%;
+    height: auto;
+}
+.about .card .card-body .class-tittle{
+    color: #2a81ea;
+    font-weight: 500;
+}
+.about .card .card-body .card-text{
+    color: #3d4b69;
+    line-height: 1.5;
+
+}
+/*--------------End About--------------*/
+
+
+/*--------------Start symptoms---------------*/
+.info{
+    margin-bottom: 100px;
+}
+.section-head h5{
+    text-transform: uppercase;
+    color: #2a81ea;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section-head  h2{
+    color: #50658e;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.section-head p{
+    width: 60%;
+    margin: auto;
+}
+
+
+.symptoms-items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+}
+.symptoms-item{
+    background-color:#f0f1f3 ;
+    border: 1px solid #dcd8d8;
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 1s;
+}
+.symptoms-item h4{
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 1s;
+}
+
+.symptoms-item:hover{
+    animation: card 2s ease-in-out;     
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    color: white;
+    background-color: #050538;
+}
+.symptoms-item:hover .tex{
+    color: white;
+    
+}
+
+@keyframes card{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+        box-shadow:10px 10px 20px rgba(0, 0, 0, .1),-10px -10px 20px rgba(0, 0, 0, .1);
+    }
+    100%{
+        transform: translateY(-10px);
+        box-shadow:10px 10px 20px rgba(0, 0, 0, .1),-10px -10px 20px rgba(0, 0, 0, .1);
+    }
+}
+
+.symptoms-item img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+
+/*--------------End symptoms---------------*/
+
+
+/*--------------Start prevention---------------*/
+.prevention{
+    background-color: #f0f1f3;
+    padding: 100px 0;
+}
+.box3{
+    text-align: center;
+}
+
+.box3-gfx {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 35px 0px rgba(70,86,117,0.15);
+}
+.box3-content{
+    padding-top: 2rem;
+}
+.box3-content h5{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/*-----steps--------*/
+.steps{
+    background-color: white;
+    border: 1px solid #dcd8d8;
+    border-radius: 5px;
+    margin-top: 125px;
+    padding: 50px 15px;
+}
+.steps .list-block h4{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.list-check{
+    padding: 0;
+}
+.list-check li{
+    margin-bottom: 1rem;
+}
+.list-check li strong{
+    font-weight: bold;
+}
+.list-check li span{
+    width: 25px;
+    height: 25px;
+    border: 1px solid skyblue;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 25px;
+
+}
+.list-check li span i{
+    color: #04d404;;
+    margin-left: 3px;
+}
+/*--------------End prevention---------------*/
+
+
+/*--------------Start Hands---------------*/
+.section-handwash{
+    background-color: #f0f1f3;
+    padding: 100px 0;
+}
+.box4-gfx {
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 35px 0px rgba(70,86,117,0.15);
+}
+.box4-content .title{
+    margin-top: 15px;
+    font-weight: bold;
+}
+/*--------------End Hands---------------*/
+
+/*--------------Start protect---------------*/
+.section-protect{
+    background-color: #f0f1f3;
+    padding: 100px 0;
+}
+.section-protect .section-head{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.protect-item {
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.protect-item .protect-gfx{
+    
+    
+    padding: 10px;
+}
+.negative .protect-gfx{
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.negative .protect-text h5{
+    color: red;
+}
+.positive .protect-gfx{
+    border: 2px solid #277ae6;
+    border-radius: 50%;
+}
+.positive .protect-text h5{
+    color: #277ae6;
+}
+.protect-item .protect-text{
+    padding-top: 40px;
+    padding-left: 25px;
+}
+.protect-item .protect-text h5{
+    font-size: 18px;
+    font-weight: 700;
+
+}
+/*--------------End protect---------------*/
+footer{
+    background-color: #04041f;
+    
+}
+.footer-content{
+    display: flex;
+    padding: 20px;
+}
+.footer-content .logo{
+    flex: 1;
+}
+.footer-content .logo .logo-img p{
+    color: white;
+    opacity: .9;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    
+    
+}
+.copyright {
+    flex: 1;
+    padding-left: 20%;
+    padding-top: 10px;
+    color: white;
+    opacity: .8;
+}
+.copyright span{
+ display: block;
+ margin-bottom: 1rem;
+}
+.copyright span:first-child a,.copyright span:nth-child(2) a{
+    color: #00f152;
+}
+/*--------------start Footer---------------*/
+
+
+/*--------------start Up btn---------------*/
+.up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 10px; 
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px 50px 20px;
+    background-color: deepskyblue;
+    outline: 0;
+    border: 0;
+    display: none;
+    cursor: pointer;
+    right: 1%;
+    bottom: 1%;
+    z-index: 10;
+    transition: opacity .5s;
+}
+.up:hover{
+    opacity: .9;
+}
+/*------------End Up btn---------------*/
+
+
+.virus1{
+    position: absolute;
+    left: -5%;
+    opacity: .98;
+    animation: virus1 5s linear infinite ;
+}
+@keyframes virus1{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    0%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@media screen and (max-width:500px){
+    .symptoms-items{
+
+        grid-template-columns:  auto;
+    }
+
+    .virus1{
+        left: -70%;
+    }
+    
+}
+
+@media screen and (min-width:501px) and (max-width:800px){
+    .symptoms-items{
+        grid-template-columns: auto;
+    }
+    .virus1{
+
+        left: -50%;
+    }
+    
+}
+@media screen and (min-width:800px) and (max-width:1200px){
+    .symptoms-items{
+        grid-template-columns: auto auto;
+    }
+    .virus1{
+        left: -25%;
+    }
+    
+}
+
+
+
+
+
